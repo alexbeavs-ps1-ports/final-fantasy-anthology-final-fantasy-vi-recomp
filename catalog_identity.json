@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Final Fantasy Anthology - Final Fantasy VI",
+    "id": "SLUS-00900",
+    "boot_exe": "SLUS_009.00"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 2
+  },
+  "rom_identity": {
+    "cue_name": "Final Fantasy Anthology - Final Fantasy VI (USA) (Rev 1).cue",
+    "bin_name": "Final Fantasy Anthology - Final Fantasy VI (USA) (Rev 1).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 268668960,
+      "md5": "5f5b379fb4e313923b89f8863c9d08a2",
+      "sha1": "baaa0c064bf2c05ebe706a948cb83078d71848bd",
+      "crc32": "9554df12"
+    },
+    "disc_fp": "9e3dd2e4135340328e20f8e8c65a96dab16f6d58d700865e525b19db3c388328"
+  },
+  "exe": {
+    "load_address": "0x80038000",
+    "entry_pc": "0x8004FF64",
+    "text_size": "0x00032000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 487,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK — Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
